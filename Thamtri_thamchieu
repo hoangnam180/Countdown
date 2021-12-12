@@ -1,0 +1,20 @@
+Kiểu tham trị là kiểu nguyên thủy ;
+Vidu let a = 3 ;
+b = a;
+a = 7;
+console(b) = 3 ;
+
+Kiểu tham chiếu là kiểu Object function Array
+vi du 
+let a = {
+    nam : 'Hoang nam';
+    age : 20
+}
+let b = a ;
+a.name = 'Huyen'
+console(b) = Huyen 20 ??
+gia tri cua a duoc luu la dia chi sau khi gán cho b thì b có cùng địa chỉ
+nên việc sửa a đồng thời cũng sửa luôn b
+-Mỗi khi tạo một Object mới thì đã tạo ra một địa chỉ mới 
+
+

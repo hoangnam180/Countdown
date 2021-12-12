@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Là một hàm có thể ghi nhớ nơi nó 
+    //được tạo và truy cập được biến ở bên ngoài phạm vi của nó
+// function createCouter(){
+//     let count = 0;
+//     function increase(){
+//         return ++count
+//     }
+//     return increase;
+// }
+//     let Create2 = createCouter();
+//     console.log(Create2())
+//     console.log(Create2())
+//     console.log(Create2())
+//     console.log(Create2())
+
+//
+
+function createStorage(key){
+    const store = JSON.parse(localStorage.getItem(key)) ?? {};
+    let save =(key)=>{
+       localStorage.setItem(key,JSON.stringify(store))
+    }
+    const storage = {
+        get(key){
+           return store[key];
+        },
+        set(key,value){
+            store[key] = value;
+            save()
+        },
+        remove(key){
+            delete store[key]
+            save()
+        }
+    } 
+    return storage;
+}
+    const profileSetting = createStorage('profile_setting');
+    profileSetting.set('Name','Hoang Nam')
+    profileSetting.set('Age',20)
+    profileSetting.set('address','Da Nang')
+</script>
+</html>

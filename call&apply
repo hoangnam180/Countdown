@@ -1,0 +1,4 @@
+-đều có tính chất giống nhau là để gọi hàm và truyền this 
+-nhưng khác nhau ở chỗ apply là truyên đối số bằng mảng còn call thì
+dùng đối số như bình thường 
+-đều có tính chất kế thừa (Mượn hàm )

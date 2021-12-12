@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    //chúng ta dùng từ khóa this để đại diện cho một đối tượng. Đối tượng 
+    //đó là chủ thế của ngữ cảnh, hoặc là chủ thế của code đang được chạy.
+    //Điều quan trọng nhất cần nhớ : This trả về object gần nhất chứa nó
+    // Nếu this đứng 1 mình (tức global, không nằm trong method hay function nào) thì sẽ trả về "window obj"
+    // Trong method : This trả về obj chứa method đó
+    // Trong function với strict mode : This trả về "undefined"
+    // Trong function không phải strict mode: This trả về "window obj"
+    // Trong 1 event : This trả về element mà event đó tác động vào.
+    function Car(name,color,weight){
+        this.name = name;
+        this.color = color;
+        this.weight = weight;
+
+    }
+    Car.name = 'meo'
+    console.log(Car.name)
+</script>
+</html> 

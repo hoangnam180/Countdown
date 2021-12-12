@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Thamtri_thamchieu",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1639017075647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1639017075647,
+            "name": "Commit-0",
+            "content": "Kiểu tham trị là kiểu nguyên thủy ;\r\nVidu let a = 3 ;\r\nb = a;\r\na = 7;\r\nconsole(b) = 3 ;\r\n\r\nKiểu tham chiếu là kiểu Object function Array\r\nvi du \r\nlet a = {\r\n    nam : 'Hoang nam';\r\n    age : 20\r\n}\r\nlet b = a ;\r\na.name = 'Huyen'\r\nconsole(b) = Huyen 20 ??\r\ngia tri cua a duoc luu la dia chi sau khi gán cho b thì b có cùng địa chỉ\r\nnên việc sửa a đồng thời cũng sửa luôn b\r\n-Mỗi khi tạo một Object mới thì đã tạo ra một địa chỉ mới \r\n\r\n\r\n"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "sourceFile": "Hosting.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1638961431578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638961459643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n+    var FullName\r\n     console.log(FullName)\r\n-    var FullName = 'Hoang Nam'\r\n+    FullName = 'Hoang Nam'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961490091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n-    var FullName\r\n+    \r\n     console.log(FullName)\r\n-    FullName = 'Hoang Nam'\r\n+    let FullName = 'Hoang Nam'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961528057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n-    \r\n+    let FullName\r\n     console.log(FullName)\r\n-    let FullName = 'Hoang Nam'\r\n+     FullName = 'Hoang Nam'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961541857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n-    let FullName\r\n     console.log(FullName)\r\n-     FullName = 'Hoang Nam'\r\n+    let FullName = 'Hoang Nam'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961558517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n+    let FullName = 'Hoang Nam'\r\n     console.log(FullName)\r\n-    let FullName = 'Hoang Nam'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961633301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,18 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n-    let FullName = 'Hoang Nam'\r\n-    console.log(FullName)\r\n+    {\r\n+        { let FullName = 'Hoang Nam'\r\n+            {\r\n+                {let FullName = 'Hoang Na'\r\n+                    \r\n+                let FullName = 'Hoang N'\r\n+                {   console.log(FullName)\r\n+                    }\r\n+                }\r\n+            }\r\n+        }\r\n+    }\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961641295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,11 @@\n         { let FullName = 'Hoang Nam'\r\n             {\r\n                 {let FullName = 'Hoang Na'\r\n                     \r\n+                {  \r\n                 let FullName = 'Hoang N'\r\n-                {   console.log(FullName)\r\n+                console.log(FullName)\r\n                     }\r\n                 }\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1638961648851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n             {\r\n                 {let FullName = 'Hoang Na'\r\n                     \r\n                 {  \r\n+                    console.log(FullName)\r\n                 let FullName = 'Hoang N'\r\n-                console.log(FullName)\r\n                     }\r\n                 }\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1638961830801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,19 +9,15 @@\n <body>\r\n     \r\n </body>\r\n <script>\r\n-    {\r\n-        { let FullName = 'Hoang Nam'\r\n-            {\r\n-                {let FullName = 'Hoang Na'\r\n-                    \r\n-                {  \r\n-                    console.log(FullName)\r\n-                let FullName = 'Hoang N'\r\n-                    }\r\n-                }\r\n-            }\r\n+   let coin1 = CreateCoin();\r\n+    \r\n+    function CreateCoin(){\r\n+        let coin = 0;\r\n+        return increse;\r\n+        function increse(){\r\n+            return ++ coin;\r\n         }\r\n     }\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961839839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     \r\n </body>\r\n <script>\r\n    let coin1 = CreateCoin();\r\n-    \r\n+   console.log(coin1) \r\n     function CreateCoin(){\r\n         let coin = 0;\r\n         return increse;\r\n         function increse(){\r\n"
+                },
+                {
+                    "date": 1638961846798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     \r\n </body>\r\n <script>\r\n    let coin1 = CreateCoin();\r\n-   console.log(coin1) \r\n+   console.log(coin1()) \r\n     function CreateCoin(){\r\n         let coin = 0;\r\n         return increse;\r\n         function increse(){\r\n"
+                }
+            ],
+            "date": 1638961431578,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n<script>\r\n    console.log(FullName)\r\n    var FullName = 'Hoang Nam'\r\n</script>\r\n</html>"
+        }
+    ]
+}

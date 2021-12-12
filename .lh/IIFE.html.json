@@ -1,0 +1,26 @@
+{
+    "sourceFile": "IIFE.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1638960074544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638960105533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n             cars.splice(index,1);\r\n         }\r\n         }\r\n     })()\r\n-    console.log(app)\r\n+    app()\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638961436645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,6 @@\n             cars.splice(index,1);\r\n         }\r\n         }\r\n     })()\r\n-    app()\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638960074544,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n<script> \r\n    //IIFE function phải có chấm phẩy ở đầu\r\n    //dùng để làm thư viện hoặc private\r\n    const app = (function(){    \r\n        const cars = [];\r\n        return {\r\n        get(index){\r\n            return cars[index];\r\n        },\r\n        add(car) {\r\n            cars.push(car);\r\n        }\r\n        ,\r\n        edit(index,car){\r\n            cars[index] = car ;\r\n        },\r\n        delete(index){\r\n            cars.splice(index,1);\r\n        }\r\n        }\r\n    })()\r\n    console.log(app)\r\n</script>\r\n</html>"
+        }
+    ]
+}

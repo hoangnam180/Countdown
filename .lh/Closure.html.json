@@ -1,0 +1,170 @@
+{
+    "sourceFile": "Closure.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1638886920612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1638886994702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,8 @@\n             return ++countTer;\r\n         }\r\n         return increase;\r\n     }\r\n-    console.log(createCounter())\r\n+    let couter1 = createCounter();\r\n+    console.log(couter1)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638887002712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n         }\r\n         return increase;\r\n     }\r\n     let couter1 = createCounter();\r\n-    console.log(couter1)\r\n+    console.log(couter1())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638887035966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n         }\r\n         return increase;\r\n     }\r\n     let couter1 = createCounter();\r\n-    console.log(couter1())\r\n+    console.log(couter1)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638887051427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n         }\r\n         return increase;\r\n     }\r\n     let couter1 = createCounter();\r\n-    console.log(couter1)\r\n+    console.log(couter1())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638887067131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,8 @@\n         return increase;\r\n     }\r\n     let couter1 = createCounter();\r\n     console.log(couter1())\r\n+    console.log(couter1())\r\n+    \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638949856489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Document</title>\r\n+</head>\r\n+<body>\r\n+    \r\n+</body>\r\n+<script>\r\n+    //Là một hàm có thể ghi nhớ nơi nó \r\n+    //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n+function createCouter(){\r\n+    let count = 0;\r\n+    function increase(){\r\n+        count ++\r\n+    }\r\n+    return increase;\r\n+}\r\n+    let Create2 = createCouter();\r\n+    console.log(Create2)\r\n+</script>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638949881221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,34 +19,7 @@\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n-    console.log(Create2)\r\n+    console.log(Create2())\r\n </script>\r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Document</title>\r\n-</head>\r\n-<body>\r\n-    \r\n-</body>\r\n-<script>\r\n-    //Là một hàm có thể ghi nhớ nơi nó \r\n-    //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n-    function createCounter(){\r\n-        let countTer = 0;\r\n-        function increase(){\r\n-            return ++countTer;\r\n-        }\r\n-        return increase;\r\n-    }\r\n-    let couter1 = createCounter();\r\n-    console.log(couter1())\r\n-    console.log(couter1())\r\n-    \r\n-</script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638949887331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n function createCouter(){\r\n     let count = 0;\r\n     function increase(){\r\n-        count ++\r\n+        return count ++\r\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n"
+                },
+                {
+                    "date": 1638949895077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,10 @@\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n     console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638949912813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n function createCouter(){\r\n     let count = 0;\r\n     function increase(){\r\n-        return count ++\r\n+        return ++count\r\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n"
+                },
+                {
+                    "date": 1638949921581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,16 +14,11 @@\n     //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n function createCouter(){\r\n     let count = 0;\r\n     function increase(){\r\n-        return ++count\r\n+         ++count\r\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638949929275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,11 @@\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n+    console.log(Create2())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950023488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n function createCouter(){\r\n     let count = 0;\r\n     function increase(){\r\n-         ++count\r\n+        return ++count\r\n     }\r\n     return increase;\r\n }\r\n     let Create2 = createCouter();\r\n@@ -24,6 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n+    var jsonNull = 'null';//kiểu Null\r\n+        console.log(typeof JSON.parse(jsonNull))\r\n+\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950036096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = 'null';//kiểu Null\r\n+    var jsonNull = '1';//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950045151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = '1';//kiểu Null\r\n+    var jsonNull = 1;//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950053355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = 1;//kiểu Null\r\n+    var jsonNull = ['nam'];//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950061433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = ['nam'];//kiểu Null\r\n+    var jsonNull = '['nam']';//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950066703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = '['nam']';//kiểu Null\r\n+    var jsonNull = '[nam]';//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950084135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n-    var jsonNull = '[nam]';//kiểu Null\r\n+    var jsonNull = '[\"javascript\",\"PHP\"]';//kiểu Null\r\n         console.log(typeof JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638950097209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,8 @@\n     console.log(Create2())\r\n     console.log(Create2())\r\n     console.log(Create2())\r\n     var jsonNull = '[\"javascript\",\"PHP\"]';//kiểu Null\r\n-        console.log(typeof JSON.parse(jsonNull))\r\n+        console.log(JSON.parse(jsonNull))\r\n \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955031007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,22 +11,27 @@\n </body>\r\n <script>\r\n     //Là một hàm có thể ghi nhớ nơi nó \r\n     //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n-function createCouter(){\r\n-    let count = 0;\r\n-    function increase(){\r\n-        return ++count\r\n-    }\r\n-    return increase;\r\n+// function createCouter(){\r\n+//     let count = 0;\r\n+//     function increase(){\r\n+//         return ++count\r\n+//     }\r\n+//     return increase;\r\n+// }\r\n+//     let Create2 = createCouter();\r\n+//     console.log(Create2())\r\n+//     console.log(Create2())\r\n+//     console.log(Create2())\r\n+//     console.log(Create2())\r\n+\r\n+//\r\n+function createStorage(key){\r\n+    let storage = {\r\n+\r\n+    } \r\n+    return storage;\r\n }\r\n-    let Create2 = createCouter();\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    console.log(Create2())\r\n-    var jsonNull = '[\"javascript\",\"PHP\"]';//kiểu Null\r\n-        console.log(JSON.parse(jsonNull))\r\n-\r\n+console.log(createStorage)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955572869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,24 @@\n //     console.log(Create2())\r\n \r\n //\r\n function createStorage(key){\r\n-    let storage = {\r\n-\r\n+    const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n+    let save =(key)=>{\r\n+       localStorage.setItem(key,JSON.stringify(store))\r\n+    }\r\n+    const storage = {\r\n+        get(key){\r\n+           return store[key];\r\n+        },\r\n+        set(key,value){\r\n+            store[key] = value;\r\n+            save()\r\n+        },\r\n+        remove(key){\r\n+            delete store[key]\r\n+            save()\r\n+        }\r\n     } \r\n     return storage;\r\n }\r\n console.log(createStorage)\r\n"
+                },
+                {
+                    "date": 1638955580557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,7 +45,7 @@\n         }\r\n     } \r\n     return storage;\r\n }\r\n-console.log(createStorage)\r\n+console.log(createStorage())\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955698869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,7 +45,8 @@\n         }\r\n     } \r\n     return storage;\r\n }\r\n-console.log(createStorage())\r\n+    const profileSetting = createStorage('profile_setting');\r\n+    console.log(profileSetting) \r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955757782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,7 +46,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    console.log(profileSetting) \r\n+    profileSetting.get('fullName')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955822838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,7 +46,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.get('fullName')\r\n+    profileSetting.set('Full Name','Hoang Nam')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955845967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,7 @@\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n     profileSetting.set('Full Name','Hoang Nam')\r\n+    profileSetting.get('Full Name')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955878358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,29 +25,39 @@\n //     console.log(Create2())\r\n //     console.log(Create2())\r\n \r\n //\r\n-function createStorage(key){\r\n-    const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n-    let save =(key)=>{\r\n-       localStorage.setItem(key,JSON.stringify(store))\r\n-    }\r\n-    const storage = {\r\n-        get(key){\r\n-           return store[key];\r\n-        },\r\n-        set(key,value){\r\n-            store[key] = value;\r\n-            save()\r\n-        },\r\n-        remove(key){\r\n-            delete store[key]\r\n-            save()\r\n-        }\r\n-    } \r\n-    return storage;\r\n+\r\n+if (typeof(Storage) !== 'undefined') {\r\n+\r\n+LocalStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n+\r\n+} else {\r\n+\r\n+alert('LocalStorage không hỗ trợ trên trình duyệt này!!');\r\n+\r\n }\r\n-    const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.set('Full Name','Hoang Nam')\r\n-    profileSetting.get('Full Name')\r\n+// function createStorage(key){\r\n+//     const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n+//     let save =(key)=>{\r\n+//        localStorage.setItem(key,JSON.stringify(store))\r\n+//     }\r\n+//     const storage = {\r\n+//         get(key){\r\n+//            return store[key];\r\n+//         },\r\n+//         set(key,value){\r\n+//             store[key] = value;\r\n+//             save()\r\n+//         },\r\n+//         remove(key){\r\n+//             delete store[key]\r\n+//             save()\r\n+//         }\r\n+//     } \r\n+//     return storage;\r\n+// }\r\n+//     const profileSetting = createStorage('profile_setting');\r\n+//     profileSetting.set('Full Name','Hoang Nam')\r\n+//     profileSetting.get('Full Name')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638955942794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,17 +26,17 @@\n //     console.log(Create2())\r\n \r\n //\r\n \r\n-if (typeof(Storage) !== 'undefined') {\r\n+        if (typeof(Storage) !== 'undefined') {\r\n \r\n-LocalStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n+        LocalStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n \r\n-} else {\r\n+        } else {\r\n \r\n-alert('LocalStorage không hỗ trợ trên trình duyệt này!!');\r\n+        alert('LocalStorage không hỗ trợ trên trình duyệt này!!');\r\n \r\n-}\r\n+        }\r\n // function createStorage(key){\r\n //     const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n //     let save =(key)=>{\r\n //        localStorage.setItem(key,JSON.stringify(store))\r\n"
+                },
+                {
+                    "date": 1638955954345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n //\r\n \r\n         if (typeof(Storage) !== 'undefined') {\r\n \r\n-        LocalStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n+            localStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n \r\n         } else {\r\n \r\n         alert('LocalStorage không hỗ trợ trên trình duyệt này!!');\r\n"
+                },
+                {
+                    "date": 1638955979069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,38 +26,29 @@\n //     console.log(Create2())\r\n \r\n //\r\n \r\n-        if (typeof(Storage) !== 'undefined') {\r\n-\r\n-            localStorage.setItem('meomeo', 'Tiếng của con mèo');\r\n-\r\n-        } else {\r\n-\r\n-        alert('LocalStorage không hỗ trợ trên trình duyệt này!!');\r\n-\r\n+function createStorage(key){\r\n+    const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n+    let save =(key)=>{\r\n+       localStorage.setItem(key,JSON.stringify(store))\r\n+    }\r\n+    const storage = {\r\n+        get(key){\r\n+           return store[key];\r\n+        },\r\n+        set(key,value){\r\n+            store[key] = value;\r\n+            save()\r\n+        },\r\n+        remove(key){\r\n+            delete store[key]\r\n+            save()\r\n         }\r\n-// function createStorage(key){\r\n-//     const store = JSON.parse(localStorage.getItem(key)) ?? {};\r\n-//     let save =(key)=>{\r\n-//        localStorage.setItem(key,JSON.stringify(store))\r\n-//     }\r\n-//     const storage = {\r\n-//         get(key){\r\n-//            return store[key];\r\n-//         },\r\n-//         set(key,value){\r\n-//             store[key] = value;\r\n-//             save()\r\n-//         },\r\n-//         remove(key){\r\n-//             delete store[key]\r\n-//             save()\r\n-//         }\r\n-//     } \r\n-//     return storage;\r\n-// }\r\n-//     const profileSetting = createStorage('profile_setting');\r\n-//     profileSetting.set('Full Name','Hoang Nam')\r\n-//     profileSetting.get('Full Name')\r\n+    } \r\n+    return storage;\r\n+}\r\n+    const profileSetting = createStorage('profile_setting');\r\n+    profileSetting.set('Full Name','Hoang Nam')\r\n+    profileSetting.get('Full Name')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956022356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.set('Full Name','Hoang Nam')\r\n-    profileSetting.get('Full Name')\r\n+    profileSetting.remove('Full Name')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956031340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.remove('Full Name')\r\n+    profileSetting.remove('meomeo')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956043813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.remove('meomeo')\r\n+    profileSetting.remove(meomeo)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956049620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,7 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.remove(meomeo)\r\n+    profileSetting.remove('meomeo')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956101035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,9 @@\n     } \r\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n-    profileSetting.remove('meomeo')\r\n+    profileSetting.set('Name','Hoang Nam')\r\n+    profileSetting.set('Age','20')\r\n+    profileSetting.set('address','Da Nang')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956164566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n     profileSetting.set('Name','Hoang Nam')\r\n-    profileSetting.set('Age','20')\r\n+    profileSetting.set('Age',20)\r\n     profileSetting.set('address','Da Nang')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1638956170974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,8 @@\n     return storage;\r\n }\r\n     const profileSetting = createStorage('profile_setting');\r\n     profileSetting.set('Name','Hoang Nam')\r\n-    profileSetting.set('Age',20)\r\n+    profileSetting.set('Age','20')\r\n     profileSetting.set('address','Da Nang')\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1638886920611,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n<script>\r\n    //Là một hàm có thể ghi nhớ nơi nó \r\n    //được tạo và truy cập được biến ở bên ngoài phạm vi của nó\r\n    function createCounter(){\r\n        let countTer = 0;\r\n        function increase(){\r\n            return ++countTer;\r\n        }\r\n        return increase;\r\n    }\r\n    console.log(createCounter())\r\n</script>\r\n</html>"
+        }
+    ]
+}

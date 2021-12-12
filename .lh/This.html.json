@@ -1,0 +1,38 @@
+{
+    "sourceFile": "This.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1639018627457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1639018669812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,7 @@\n         this.color = color;\r\n         this.weight = weight;\r\n \r\n     }\r\n-    const Cat = new Car('meo',23,32)\r\n-    console.log(Cat)\r\n+    Car.name = 'meo'\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639018676592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,7 @@\n         this.weight = weight;\r\n \r\n     }\r\n     Car.name = 'meo'\r\n+    console.log(Car)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639018683158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n         this.weight = weight;\r\n \r\n     }\r\n     Car.name = 'meo'\r\n-    console.log(Car)\r\n+    console.log(Car.name)\r\n </script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639052935468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <title>Document</title>\r\n </head>\r\n <body>\r\n     \r\n+    <a href=\"https://10fastfingers.com/typing-test/vietnamese\"><img src=\"http://img.10fastfingers.com/badge/typing-test_8_AU.png\" alt=\"Typing Test\" /></a><p>Truy cập <a href=\"https://10fastfingers.com/typing-test/vietnamese\">Công cụ Kiểm Tra Tốc Độ Đánh Máy</a> và thử!</p>\r\n </body>\r\n <script>\r\n     function Car(name,color,weight){\r\n         this.name = name;\r\n@@ -18,5 +19,5 @@\n     }\r\n     Car.name = 'meo'\r\n     console.log(Car.name)\r\n </script>\r\n-</html>\n\\ No newline at end of file\n+</html> \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1639053251126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,8 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n </head>\r\n <body>\r\n-    \r\n-    <a href=\"https://10fastfingers.com/typing-test/vietnamese\"><img src=\"http://img.10fastfingers.com/badge/typing-test_8_AU.png\" alt=\"Typing Test\" /></a><p>Truy cập <a href=\"https://10fastfingers.com/typing-test/vietnamese\">Công cụ Kiểm Tra Tốc Độ Đánh Máy</a> và thử!</p>\r\n </body>\r\n <script>\r\n     function Car(name,color,weight){\r\n         this.name = name;\r\n"
+                }
+            ],
+            "date": 1639018627456,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n<script>\r\n    function Car(name,color,weight){\r\n        this.name = name;\r\n        this.color = color;\r\n        this.weight = weight;\r\n\r\n    }\r\n    const Cat = new Car('meo',23,32)\r\n    console.log(Cat)\r\n</script>\r\n</html>"
+        }
+    ]
+}
